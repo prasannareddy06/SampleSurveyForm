@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID SURVEY FORM</title>
+    <style>
+        html {
+    height: 100%;  
+  }
+  h2{
+      text-align: center;
+      font-style: oblique;
+      font-weight: bolder;
+  }
+  body{
+      background-color:rgb(75, 17, 17);
+  }
+  input[type=submit]{
+  background-color: rgb(75, 17, 17);
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 3px 2px;
+  cursor: pointer;
+}
+.maindiv{
+    background-color: white;
+    margin: auto;
+    width: 60%;
+    border: 2px solid white;
+    border-radius: 1px;
+    padding: 10px;
+}
+.headdiv{
+    margin: auto;
+    width: 60%;
+    height: 50px;
+    border:2px solid black;
+    color: rgb(75, 17, 17);
+    padding-bottom: 15px;
+}
+label{
+    font-weight: bolder;
+}
+    </style>
+</head>
+<body>
+    <div class="maindiv">
+    <form>
+        <div class="headdiv">
+        <h2>COVID 19 SURVEY FORM</h2>
+        </div><br><br>
+        <label>Name:</label>
+        <input type="text" name="name" id="name"><br><br>
+        <label>Age:</label>
+        <input type="number" name="age" id="age"><br><br>
+        <label>Gender:</label><br>
+        <input type="radio" name="gender">Male<br><input type="radio" name="gender">Female<br><input type="radio" name="gender">Other
+        <br><input type="radio" name="gender">Prefer not to say<br><br>
+        <label>Do you experience any of the below symptoms?</label><br>
+        <input type="checkbox" name="Cold" value="cold" />Cold<br>
+ <input type="checkbox" name="Fever" value="fever" />Fever<br>
+ <input type="checkbox" name="Cough" value="cough" />Cough<br>
+ <input type="checkbox" name="Shortness of breath" value="shortness of breath" />Shortness of breath<br>
+ <input type="checkbox" name="Headache" value="headache" />Headache<br>
+ <input type="checkbox" name="Muscle Pain" value="muscle pain" />Muscle pain<br>
+ <input type="checkbox" name="Sore throat" value="sore throat" />Sore throat<br>
+ <input type="checkbox" name="Diarrhea" value="Diarrhea" />Diarrhea<br>
+ <input type="checkbox" name="Taste and smell disorders" value="taste and smell disorders" />Taste and smell disorders<br>
+ <input type="checkbox" name="Exhaustion" value="exhaustion" />Exhaustion<br><br>
+ <label>Do you experience any other difficulties?</label><br>
+ <textarea cols="50" rows="1" value="otherdifficulties"></textarea><br><br>
+<label>Do you suffer from any of the following diseases?</label><br>
+<input type="checkbox" name="asthma" />Asthma<br>
+ <input type="checkbox" name="Cancer"/>Cancer<br>
+ <input type="checkbox" name="cardiovascular diseases"/>Cardiovascular diseases<br>
+ <input type="checkbox" name="diabetes" />Diabetes<br>
+ <input type="checkbox" name="bronchitis" />Bronchitis<br>
+ <input type="checkbox" name="other"/>Others<br><br>
+ <label>Do you have a travel history to any of these countries?</label><br>
+ <input type="checkbox" name="china" />China<br>
+ <input type="checkbox" name="italy" />Italy<br>
+ <input type="checkbox" name="spain" />Spain<br>
+ <input type="checkbox" name="france" />France<br>
+ <input type="checkbox" name="india"/>India<br>
+ <input type="checkbox" name="US"/>US<br>
+ <input type="checkbox" name="UK" />UK<br>
+ <input type="checkbox" name="Others"/>Others<br><br>
+<label>Approximately, how many people have you come in contact with in past 15 days?</label><br><br>
+<select id="contact" name="contact">
+    <option value=""></option>
+    <option value="1-5">1-5</option>
+    <option value="5-10">5-10</option>
+    <option value="10-30">10-30</option>
+    <option value="more than 30">More than 30</option>
+  </select><br><br>
+  <label>Do you have any of these following habits?</label><br>
+  <input type="checkbox" name="smoking" />Smoking<br>
+ <input type="checkbox" name="drinking" />Drinking<br>
+ <input type="checkbox" name="others" />Others<br><br>
+ <label>Please provide your contact information to assist you:</label><br><br>
+ <label>Contact number:</label>
+ <input type="text" name="contactnum" id="contactnum"><br><br>
+ <label>Email ID:</label>
+ <input type="email" name="emailid" id="emailid"><br><br>
+<input type="submit" id="submit"><br><br><br><br>
+    </form>
+    </div>
+</body>
+</html>
